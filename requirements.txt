@@ -1,2 +1,4 @@
-requests==2.31.0
+streamlit
+requests
 pandas
+pytrends
