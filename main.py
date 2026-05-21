@@ -272,7 +272,7 @@ def fetch_whois_age(domain: str) -> dict:
         url  = f"https://web.archive.org/web/19990101000000*/{domain}"
         resp = requests.get(url, timeout=8)
         if '1999' in resp.text or '2000' in resp.text:
-            return {'age_years': 20+, 'created': 'pre-2000'}
+            return {'age_years': 20, 'created': 'pre-2000'}
     except Exception:
         pass
 
